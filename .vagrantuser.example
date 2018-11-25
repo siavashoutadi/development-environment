@@ -104,3 +104,15 @@ intellij:
 
 # persistent_storage:
 #  enabled: false
+
+# nodejs:
+#  npm_global_packages:
+#    - name: grunt-cli
+#    - name: grunt-init
+#    - name: gulp-cli
+#    - name: npm-check-updates
+#    - name: typescript
+#    - name: ts-node
+#    - name: typings
+#    - name: '@angular/cli'
+#    - name: '@angular-devkit/schematics-cli'

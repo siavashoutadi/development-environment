@@ -167,6 +167,18 @@ Vagrant.configure(2) do |config|
       'force' => false
     },
 
+    'nodejs' => {
+      'npm_global_packages' => [
+        { 'name' => 'grunt-cli' },
+        { 'name' => 'grunt-init' },
+        { 'name' => 'gulp-cli' },
+        { 'name' => 'npm-check-updates' },
+        { 'name' => 'typescript' },
+        { 'name' => 'ts-node' },
+        { 'name' => 'typings' }
+      ]
+    },
+
     # Deprecated use intellij.edition instead
     'intellij_edition' => nil,
 
@@ -374,6 +386,8 @@ SCRIPT
       git_user_name: config.user.git_user.name,
       git_user_email: config.user.git_user.email,
       git_user_force: config.user.git_user.force,
+
+      nodejs_npm_global_packages: config.user.nodejs.npm_global_packages,
 
       intellij_edition: config.user.intellij_edition.nil? ? config.user.intellij.edition : config.user.intellij_edition,
 
