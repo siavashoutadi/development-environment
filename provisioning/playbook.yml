@@ -111,7 +111,7 @@
     - role: gantsign.fd
 
     # Install and configure Git version control
-    - role: franklinkim.git
+    - role: weareinteractive.git
       git_config: '{{ git_config }}'
 
     # Configure Git user name and email
