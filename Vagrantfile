@@ -113,7 +113,6 @@ Vagrant.configure(2) do |config|
     'persistent_storage' => {
       'enabled' => 'true',
       'location' => '.vagrant/persistent-disk.vdi',
-      'size' => '16_000',
       'mountname' => 'persistent',
       'filesystem' => 'ext4',
       'mountpoint' => '/var/persistent',
@@ -218,7 +217,7 @@ Vagrant.configure(2) do |config|
 
   config.persistent_storage.enabled = config.user.persistent_storage.enabled
   config.persistent_storage.location = config.user.persistent_storage.location
-  config.persistent_storage.size = config.user.persistent_storage.size
+  config.persistent_storage.size = 16_000
   config.persistent_storage.mountname = config.user.persistent_storage.mountname
   config.persistent_storage.filesystem = config.user.persistent_storage.filesystem
   config.persistent_storage.mountpoint = config.user.persistent_storage.mountpoint
